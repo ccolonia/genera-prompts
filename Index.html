@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promptify - Crea Prompts Profesionales</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="container">
+      <h1>Con Sexto Sistema Crea Prompts Profesionales con IA</h1>
+      <p>Diseña prompts estructurados listos para ChatGPT, Midjourney, Bard y más.</p>
+      <a href="#chatbot" class="btn-primary">Comienza ahora — Es gratis</a>
+    </div>
+  </header>
+
+ <!-- Chatbot Section -->
+<section id="chatbot" class="chatbot">
+  <div class="container">
+    <h2>💬 Tu Asistente de Prompts</h2>
+    <p>Responde unas preguntas y crea tu prompt personalizado.</p>
+    <div id="chat-window"></div>
+    <div id="options-container"></div>
+    <button id="export-btn" onclick="exportPrompt()" disabled>📥 Exportar como .txt</button>
+    <div id="restart-container" style="display: none; text-align: center; margin-top: 20px;">
+      <button onclick="restartChat()" class="btn-primary">🔄 Generar otro prompt</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 SextoSistema. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
